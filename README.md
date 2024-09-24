@@ -3,10 +3,9 @@
 Project Overview
 Title: Efficient Data Processing ETL Pipeline for Event Records
 Objective: To process raw product event data, filter relevant event records from the last five days before July 1, 2024, expand JSON columns, and store the final data in a structured Apache Parquet format S3.
+------------------------------------------------------------------------------------------------------------------------
 
-—------------------------------------------------------------------------------------------------------------------------
-
-Algorithm
+**Algorithm**
 1. Data Filtering
 Objective: Retain event records from June 26, 2024, to June 30, 2024, based on
 `event_date`.
@@ -24,10 +23,9 @@ Objective: Write the filtered and transformed data in Parquet format to S3.
 processed data.
 - The output was partitioned to ensure efficient storage and querying.
 
+------------------------------------------------------------------------------------------------------------------------
 
-—------------------------------------------------------------------------------------------------------------------------
-
-Methodologies
+**Methodologies**
 1. AWS Glue and PySpark for ETL
 AWS Glue was utilized to handle the Extract, Transform, and Load (ETL) operations. The
 raw data was loaded from S3, transformed using PySpark, and the output stored back in S3
@@ -46,10 +44,9 @@ The final data was written in Parquet format, which is a highly efficient format
 analytics.
 - Parquet supports efficient storage and querying, and the schema was aligned to the
 provided specification.
+------------------------------------------------------------------------------------------------------------------------
 
-—------------------------------------------------------------------------------------------------------------------------
-
-Technology Stack
+**Technology Stack**
 - Cloud Services: AWS (S3, Lambda, Glue)
 - Data Processing: PySpark on AWS Glue
 - Storage: S3 (Parquet format)
